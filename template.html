@@ -4,10 +4,13 @@
 
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        
     </head>
 
     <style>
@@ -23,7 +26,8 @@
     
      
     .nav-pills{
-        /*background-color: #67A952; Uncomment this to change the background color of the nav bar */
+
+        background-color: white;
         font-size : large;
     }
 
@@ -35,11 +39,15 @@
     .nav-pills .nav-link{
         color:#325C2B;
     }
+
+    .footer-design{
+        background-color: #4EA63F;
+    }
     </style>
 
     <!--For the navigation bar-->
     <!--TODO: Set the specific "a" tag to be active once clicked-->
-    <nav class="nav nav-pills flex-column flex-sm-row mb-3 p-3 font-weight-bold">
+    <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
                 
         <a class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a> <!--Put home page link here-->
         <a class="flex-sm-fill text-sm-center nav-link " href="#">Editorial Board</a> <!--Put the editorial page link here-->
@@ -55,9 +63,47 @@
         </div>
       </div>
     
+    <!--Put content here or you can change it-->
+    <div class="row w-50  mx-auto d-block">
+        <p class="lead text-center text-justify">
+            <h1> PUT HERE THE CONTENTS </h1>
+            Proin elementum sed ipsum pulvinar ullamcorper. Proin ex dolor, lacinia id mollis sed, pharetra auctor erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean felis magna, mollis sit amet efficitur vel, viverra non ex. Nulla maximus eu risus non accumsan. Maecenas ullamcorper justo ut nunc lacinia, a pellentesque tortor suscipit. Fusce laoreet dolor sed convallis consequat.
+
+            Praesent pulvinar posuere justo sed malesuada. Nulla mauris purus, lacinia eget condimentum nec, auctor eget lorem. Praesent a velit eget justo eleifend dapibus. Fusce sed mauris lobortis, iaculis erat elementum, ornare augue. Nunc lacinia viverra lacus nec suscipit. Fusce tortor lacus, aliquet non sem eget, mollis hendrerit eros. Nunc malesuada felis ac velit ornare, et efficitur nulla tempus. Duis interdum tortor lectus, a tempor nisl tempor quis. Sed ipsum risus, pellentesque a aliquet id, accumsan at metus. Suspendisse vel tellus pellentesque, auctor erat at, dignissim mi. Fusce aliquam eros porta, consectetur orci ut, cursus lorem. Curabitur porta eu augue id tristique.
+            
+            Integer semper elit orci, at consectetur velit tincidunt id. Cras eu eros vitae neque venenatis tincidunt eu at nisi. Ut malesuada elit vitae ipsum hendrerit convallis. Sed tempor metus nec velit dictum semper. Aenean purus nunc, blandit eu aliquet pulvinar, tincidunt non quam. Ut rhoncus ligula eu est venenatis pulvinar. Sed iaculis sed tortor sed semper.
+            
+            Vestibulum in enim maximus, eleifend elit sed, accumsan leo. Vestibulum eu mi felis. Fusce tristique iaculis lacus. Ut ac sem quis felis placerat condimentum a vitae mauris. Aliquam sed auctor risus. Aliquam erat volutpat. Sed non dignissim ligula. Mauris quis tellus lorem. Nunc quis risus a ligula commodo ornare. Praesent consectetur, mauris a feugiat scelerisque, elit diam semper est, at rhoncus magna enim eu dolor. Etiam hendrerit mi at odio elementum ultricies id vitae velit. Aenean ut velit turpis. In vestibulum velit a lacinia iaculis.
+            
+            Donec nibh mauris, condimentum eu lectus eget, vulputate luctus magna. Pellentesque ut accumsan nibh. Nulla vel cursus erat. Proin tincidunt lectus eu ligula hendrerit, eget dapibus sem placerat. Mauris in consectetur risus, a lobortis urna. Curabitur rhoncus libero ut risus tempus ornare. Pellentesque at odio feugiat, consectetur nulla sit amet, pretium neque. Phasellus sodales nulla sit amet vehicula iaculis. Vestibulum quis ipsum ligula. Donec consectetur elit id pharetra ullamcorper.
+            
+            
+
+            <br>Here is the <a href="https://github.com/Francis-Magallanes/Any" target="_blank">link</a> for the project repository<br>
+        </p>
+
+
+    </div>
 
     <!--For the footer or the contact details-->
+    <div class="container-fluid mt-5 p-3 footer-design">
+        <div class="row w-50  mx-auto d-block text-center text-white">
+             <p>
 
+                <!--put additional contact details if there is pa-->
+                 <br> Contact Details: <br>
+                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email: jciea.dlsu@gmail.com
+    
+                 <br> <br> Subscription Details and Concerns: <br>
+                 
+                 Contact Ms. Joanne Castañares<br>
+                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  Telefax: (632) 523-4281 <br>
+                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Email: dlsupublishinghouse@ dlsu.edu.ph
+             </p>
+             
+        </div>
+     </div>
+    
 
 </html>
 
