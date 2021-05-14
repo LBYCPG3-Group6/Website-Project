@@ -20,11 +20,26 @@
         background-position: 50% 40%;
         background-blend-mode: darken;
     }
+    
+     
+    .nav-pills{
+        /*background-color: #67A952; Uncomment this to change the background color of the nav bar */
+        font-size : large;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #67D952 !important;
+        
+    }
+
+    .nav-pills .nav-link{
+        color:#325C2B;
+    }
     </style>
 
     <!--For the navigation bar-->
     <!--TODO: Set the specific "a" tag to be active once clicked-->
-    <nav class="nav nav-pills flex-column flex-sm-row p-3">
+    <nav class="nav nav-pills flex-column flex-sm-row mb-3 p-3 font-weight-bold">
                 
         <a class="flex-sm-fill text-sm-center nav-link active" href="#">Home</a> <!--Put home page link here-->
         <a class="flex-sm-fill text-sm-center nav-link " href="#">Editorial Board</a> <!--Put the editorial page link here-->
@@ -42,5 +57,7 @@
     
 
     <!--For the footer or the contact details-->
+
+
 </html>
 
