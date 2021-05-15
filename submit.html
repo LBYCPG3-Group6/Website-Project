@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       
+
+    </head>
+
+    <style>
+    @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css";
+
+    .jumbotron{
+        /*This will change the background of jumbotron into a image*/
+        background-image: url("assets/la_salle.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 40%;
+        background-blend-mode: darken;
+    }
+    
+     
+    .nav-pills{ 
+        background-color: white; 
+        font-size : large;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #67D952;
+        
+    }
+
+    .nav-pills .nav-link{
+        color:#325C2B;
+    }
+
+    .footer-design{
+        background-color: #4EA63F;
+    }
+    </style>
+
+    <!--For the navigation bar-->
+    <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
+                
+        <a class="flex-sm-fill text-sm-center nav-link active m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
+      </nav>
+
+    <!--Provide the neccessary title for the webpage-->
+    <div class="jumbotron jumbotron-fluid p-5 text-white">
+        <div class="container">
+          <h1 class="display-4">Journal of Computational Innovation and Engineering Applications</h1>
+          <p class="lead">A peer reviewed, open access journal of De La Salle University, Manila</p>
+        </div>
+      </div>
+    
+    <div class = "container-fluid">
+        
+        <h2>Call for Papers (Topics of Interest)</h2>
+
+         <!--Selection Type for checking of the topics-->
+         <div class="row">
+
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">hatdog</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">hatdog1</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">hatdog2</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">hatdog3</div>
+              </div>
+            </div>
+
+          </div>
+
+     
+    
+        <div class="row ">
+            
+            <div class = "col">
+                <p class="lead text-center text-justify">
+                    <h2>Submit your Paper</h2>
+                    
+                    Submit your paper to this email, jciea.dlsu@gmail.com. Make sure that you have read the author guidelines and follow it.
+                </p>
+            </div>
+    
+            <div class = "col">
+                <p class="lead text-center text-justify">
+                    <h2>Author Guidelines</h2>
+                  
+                </p>
+            </div>
+     
+    
+        </div>
+
+    </div>
+    
+
+    <!--For the footer or the contact details-->
+    <div class="container-fluid mt-5 p-3 footer-design">
+        <div class="row w-50  mx-auto d-block text-center text-white">
+             <p>
+
+                <!--put additional contact details if there is pa-->
+                 <br> Contact Details: <br>
+                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email: jciea.dlsu@gmail.com
+    
+                 <br> <br> Subscription Details and Concerns: <br>
+                 
+                 Contact Ms. Joanne Castañares<br>
+                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>  Telefax: (632) 523-4281 <br>
+                 <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>  Email: dlsupublishinghouse@ dlsu.edu.ph
+             </p>
+             
+        </div>
+     </div>
+    
+
+</html>
+
