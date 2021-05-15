@@ -68,6 +68,7 @@
 
     .list-group .list-group-item-action{
         color: var(--tabselectcolor);
+        font-size: 18px; 
     }
     .list-group .list-group-item-action:hover{
         background-color: var(--tabhovercolor);
@@ -80,14 +81,24 @@
 
      /*Creating another size for the icons*/
      .material-icons.md-14 { font-size: 14px; }
+
+     /*adjusting the font size of the data in the table*/
+     td{
+         font-size: 18px;    
+     }
+     
+     p{
+        font-size: 16px;
+     }
+
     </style>
 
     <!--For the navigation bar-->
     <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
                 
-        <a class="flex-sm-fill text-sm-center nav-link active m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
         <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link active m-2" href="#" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
         <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
         <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
       </nav>
@@ -102,10 +113,10 @@
     
     <div class = "container-fluid">
         
-        <h2>Call for Papers (Topics of Interest)</h2>
+        <h2 class="text-center mb-5 mt-5">Call for Papers (Topics of Interest)</h2>
 
          <!--Selection Type for checking of the topics-->
-         <div class="row">
+         <div class="row mb-5">
 
             <div class="col-4">
               <div class="list-group" id="list-tab" role="tablist">
@@ -121,16 +132,15 @@
                 <!--List of the fields under the computational intelligence-->
                 <div class="tab-pane fade show active" id="list-ci" role="tabpanel" aria-labelledby="list-ci-list">
 
-                    <table class = "table">
+                    <table class = "table  text-center table-sm table-striped">
                         
                         <thead>
 
                             <tr>
                                 <th class = "text-center" scope = "col" colspan = "2">
-                                    Computational Intelligence
+                                    <h4>Computational Intelligence</h4>
                                 </th>
 
-                                <th> </th>
                             </tr>
 
                         </thead>
@@ -180,16 +190,15 @@
                 <!--List of the fields under the emerging tecnollogy trends-->
                 <div class="tab-pane fade" id="list-ett" role="tabpanel" aria-labelledby="list-ett-list">
 
-                    <table class = "table">
+                    <table class = "table  text-center table-sm table-striped">
                         
                         <thead>
 
                             <tr>
                                 <th class = "text-center" scope = "col" colspan = "2">
-                                    Emerging Technology Trends
+                                    <h4>Emerging Technology Trends</h4>
                                 </th>
 
-                                <th> </th>
                             </tr>
 
                         </thead>
@@ -216,16 +225,9 @@
                                 <td> Smart Cities </td>
                                 <td> Smart Grids </td>
                             </tr>
-
-                           
+                          
                             <tr>
                                 <td> Smart Farm Technologies </td>
-                                <td> Smart Grids </td>
-                            </tr>
-
-                           
-                            <tr>
-                                <td> Smart Farm Techologies </td>
                                 <td> Virtual Reality </td>
                             </tr>
 
@@ -244,16 +246,15 @@
                 <!--List of the fields under the energy and environment-->
                 <div class="tab-pane fade" id="list-ene" role="tabpanel" aria-labelledby="list-ene-list">
                     
-                    <table class = "table">
+                    <table class = "table  text-center table-sm table-striped">
                         
                         <thead>
 
                             <tr>
                                 <th class = "text-center" scope = "col" colspan = "2">
-                                    Energy and Environment
+                                    <h4>Energy and Environment</h4>
                                 </th>
 
-                                <th> </th>
                             </tr>
 
                         </thead>
@@ -297,13 +298,13 @@
                 <!--List of the fields under the engineering, information, and communications technology-->
                 <div class="tab-pane fade" id="list-eiact" role="tabpanel" aria-labelledby="list-eiact-list">
 
-                    <table class = "table">
+                    <table class = "table  text-center table-sm table-striped">
                         
                         <thead>
 
                             <tr>
                                 <th class = "text-center" scope = "col" colspan = "3">
-                                    Engineering, Information, and Communications Technology
+                                    <h4>Engineering, Information, and Communications Technology</h4>
                                 </th>
 
                                 <th> </th>
@@ -334,7 +335,7 @@
                             <tr>
                                 <td> Digital/Analog Signal Processing </td>
                                 <td> E-Commerce Application Fields </td>
-                                <td> E-learning and Mobile L:earning Tools </td>
+                                <td> E-learning and Mobile Learning Tools </td>
                             </tr>
 
                             <tr>
@@ -371,24 +372,25 @@
 
             </div>
 
-          </div>
+         </div>
 
      
         <!--Submit your Paper  and the author guidelines portion-->
-        <div class="row ">
+        <div class="row mt-3">
             
             <div class = "col">
-                <p class="lead text-center text-justify">
-                    <h2>Submit your Paper</h2>
-                    
-                    Submit your paper to this email, jciea.dlsu@gmail.com. Make sure that you have read the author guidelines and follow it.
+                
+                <h2 class="text-center">Submit your Paper</h2>
+                <p class="w-75 text-sm-center mx-auto d-block">
+                    Submit your paper to this email, <b>jciea.dlsu@gmail.com</b>. Make sure that you have read the author guidelines and follow it before sending your paper and other needed documents.
                 </p>
             </div>
     
             <div class = "col">
-                <p class="lead text-center text-justify">
-                    <h2>Author Guidelines</h2>
-                  
+                <h2 class="text-center">Author Guidelines</h2>
+                <p class="w-75 text-sm-center mx-auto d-block">
+                    Follow the format of the paper for this journal. The format of the paper can be found in this <a href="https://drive.google.com/file/d/1zr6xykI1LaOP44BrAMqB9QbKAncbkm69/view?usp=sharing" target="_blank">link</a>. Also, make sure to fill up this  
+                    <a href="https://drive.google.com/file/d/1YOYmX_KH0rq2Qg9taEYNTX44YFlLDVIk/view?usp=sharing" target="_blank">copyright</a> and send it together with your paper. Please see the "Submit you Paper" portion to know whom the needed documents will be sent.
                 </p>
             </div>
      
