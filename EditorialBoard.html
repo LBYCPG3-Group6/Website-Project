@@ -57,6 +57,7 @@
 	  display: block;
 	  margin-left: auto;
 	  margin-right: auto;
+	  margin-top: 20px;
 	}
 
 	h1 {
@@ -69,6 +70,10 @@
 	font-weight: bold;
 	}
 
+	#footer{
+		/*this will counteract the changes for p tag*/
+		font-weight: normal;
+	}
 	div {
 	text-align: center;
 	}
@@ -114,7 +119,7 @@
       </div>
 	  
 	<!--Editorial Board-->  
-	<h1> Editorial Board </h1>
+	<h1 class="mt-5 mb-5"> Editorial Board </h1>
 	<img src="assets/ED.png" alt="ED" style="width:10%;">
 	<div><strong> Editor-in-Chief </strong></div>
 	<div><strong>Prof. Elmer Dadios</strong></div>
@@ -136,7 +141,7 @@
 	<div>ira.valenzuela@dlsu.edu.ph</div>
 	<p> </p>
 
-	<h1> International Advisory Board </h1>
+	<h1 class="mt-5 mb-5"> International Advisory Board </h1>
 
 	<div class="row">
 	  <div class="column">
@@ -188,7 +193,7 @@
 	  
 	  <div class="row">
 	  <div class="column">
-		<img src="MA.png" alt="MA" style="width:15%">
+		<img src="assets/MA.png" alt="MA" style="width:15%">
 		<b>Prof. Marcelo Ang </b><div>
 		</div>
 		<i>National University of Singapore, Singapore </i>
@@ -367,7 +372,7 @@
 
     <div class="container-fluid mt-5 p-3 footer-design">
         <div class="row w-50  mx-auto d-block text-center text-white">
-             <p>
+             <p id="footer">
 
                 <!--put additional contact details if there is pa-->
                  <br> Contact Details: <br>
