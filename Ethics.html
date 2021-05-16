@@ -37,10 +37,7 @@
 	}
 
 	/* Add padding BETWEEN each column */
-	.row,
-	.row > .column {
-	  padding: 8px;
-	}
+	
 
 	/* Create four equal columns that floats next to each other */
 	.column {
@@ -48,15 +45,11 @@
 	  width: 33.33%;
 	}
 
-	/* Clear floats after rows */ 
-	.row:after {
-	  content: "";
-	  display: table;
-	  clear: both;
-	}
+	
 
 	/* Content */
 	.content {
+		
 	  background-color: white;
 	  padding: 10px;
 	  text-align: center;
@@ -153,7 +146,7 @@
         <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
         <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
       </nav>
-<!--Provide the neccessary title for the webpage-->
+	<!--Provide the neccessary title for the webpage-->
     <div class="jumbotron jumbotron-fluid p-5 text-white">
         <div class="container">
           <h1 class="display-4">Journal of Computational Innovation and Engineering Applications</h1>
@@ -162,113 +155,98 @@
       </div>
 	  
 	<div class="container-fluid text-center">
-	<h1>Publication Ethics</h1>
+	<h1 class= "mb-4">Publication Ethics</h1>
 
-	<div class="row">
-		<div class="column">
-			<div class="content">
-				<div class="flip-box">
-					<div class="flip-box-inner">
-						<div class="flip-box-front">
-							<img src="assets/ebb.png" alt="ebb" style="width:100%">
-								
-						</div>
-						<div class="flip-box-back">
-						<p>All manuscripts are subject to peer review and are expected to meet standards of academic excellence.</p>
-						</div>
+	<div class="row mb-3 text-center">
+		<div class="col">
+			<div class="flip-box mx-auto d-block">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+							
 					</div>
-
-					<h5 class="mt-2">Article Assessment</h5>
+					<div class="flip-box-back">
+					<p>All manuscripts are subject to peer review and are expected to meet standards of academic excellence.</p>
+					</div>
 				</div>
 
+				<h5 class="mt-2">Article Assessment</h5>
 			</div>
 		</div>
-		<div class="column">
-			<div class="content">
-				<div class="flip-box">
-					<div class="flip-box-inner">
-						<div class="flip-box-front">
-							<img src="assets/ebb.png" alt="ebb" style="width:100%">
-						</div>
-						<div class="flip-box-back">
-						<p>Authors must not use the words, figures, or ideas of others without attribution. All sources must be cited at the point they are used, and reuse of wording must be limited and be attributed or quoted in the text.</p>
-						</div>
+		<div class="col">
+			<div class="flip-box mx-auto d-block mb-5">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
 					</div>
-
-					<h5 class="mt-2">Plagiarism</h5>
+					<div class="flip-box-back">
+					<p>Authors must not use the words, figures, or ideas of others without attribution. All sources must be cited at the point they are used, and reuse of wording must be limited and be attributed or quoted in the text.</p>
+					</div>
 				</div>
+
+				<h5 class="mt-2">Plagiarism</h5>
 			</div>
 		</div>
-		<div class="column">
-			<div class="content">
-				<div class="flip-box">
-					<div class="flip-box-inner">
-						<div class="flip-box-front">
-							<img src="assets/ebb.png" alt="ebb" style="width:100%">
-						</div>
-						<div class="flip-box-back">
-						<p>Manuscripts submitted must not be submitted elsewhere while under consideration and must be withdrawn before being submitted elsewhere. Authors whose articles are found to have been simultaneously submitted elsewhere may incur sanctions.</p>
-						</div>
+		<div class="col">
+			<div class="flip-box mx-auto d-block  mb-5">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
 					</div>
-
-					<h5 class="mt-2">Duplicate submission and Redundant publication</h5>
+					<div class="flip-box-back">
+					<p>Manuscripts submitted must not be submitted elsewhere while under consideration and must be withdrawn before being submitted elsewhere. Authors whose articles are found to have been simultaneously submitted elsewhere may incur sanctions.</p>
+					</div>
 				</div>
+
+				<h5 class="mt-2">Duplicate submission and Redundant publication</h5>
 			</div>
 		</div>
 	</div>
+
 	<div>.</div>
 	
-	<div class="row">
-		<div class="column">
-			<div class="content">
-
-				<div class="flip-box">
-					<div class="flip-box-inner">
-						<div class="flip-box-front">
-							<img src="assets/ebb.png" alt="ebb">
-						</div>
-						<div class="flip-box-back">
-						<p>Authors whose submitted manuscripts are found to include citations whose primary purpose is to increase the number of citations to a given author’s work, or to articles published in a particular journal, may incur sanctions.</p>
-						<p></p>
-						</div>
+	<div class="row mb-3">
+		<div class="col">
+			<div class="flip-box mx-auto d-block mb-5">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb">
 					</div>
-					<h5 class="mt-2">Citation manipulation</h5>
+					<div class="flip-box-back">
+					<p>Authors whose submitted manuscripts are found to include citations whose primary purpose is to increase the number of citations to a given author’s work, or to articles published in a particular journal, may incur sanctions.</p>
+					<p></p>
+					</div>
 				</div>
-				
-
+				<h5 class="mt-2">Citation manipulation</h5>
 			</div>
+
 		</div>
-		<div class="column">
-			<div class="content">
-				<div class="flip-box">
-					<div class="flip-box-inner">
-						<div class="flip-box-front">
-							<img src="assets/ebb.png" alt="ebb">
-						</div>
-						<div class="flip-box-back">
-						<p>The authors of submitted manuscripts or published articles that are found to have fabricated or falsified the results, including the manipulation of images, may incur sanctions, and published articles may be retracted.</p>
-						</div>
+		<div class="col">
+			<div class="flip-box mx-auto d-block mb-5">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb">
 					</div>
-					<h5 class="mt-2">Fabrication and Falsification</h5>
+					<div class="flip-box-back">
+					<p>The authors of submitted manuscripts or published articles that are found to have fabricated or falsified the results, including the manipulation of images, may incur sanctions, and published articles may be retracted.</p>
+					</div>
 				</div>
+				<h5 class="mt-2">Fabrication and Falsification</h5>
 			</div>
 		</div>
 
-		<div class="column">
-			<div class="content">
-				<div class="flip-box">
-					<div class="flip-box-inner">
-						<div class="flip-box-front">
-							<img src="assets/ebb.png" alt="ebb" style="width:100%">
-							
-						</div>
-						<div class="flip-box-back">
-						<p>All listed authors must have made a significant scientific contribution to the research in the manuscript, approved its claims, and agreed to be an author. It is important to list everyone who made a significant scientific contribution. </p>
-						</div>
+		<div class="col">
+			<div class="flip-box mx-auto d-block mb-5">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						
 					</div>
-					<h5 class="mt-2">Authorship and Acknowledgements</h5>
+					<div class="flip-box-back">
+					<p>All listed authors must have made a significant scientific contribution to the research in the manuscript, approved its claims, and agreed to be an author. It is important to list everyone who made a significant scientific contribution. </p>
+					</div>
 				</div>
-
+				<h5 class="mt-2">Authorship and Acknowledgements</h5>
 			</div>
 		</div>
 	</div>
