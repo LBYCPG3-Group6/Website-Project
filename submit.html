@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+       
+
+    </head>
+
+    <style>
+    :root{
+        --tabselectcolor: #325C2B;
+        --tabhovercolor: #e9ecef;
+    }
+    .jumbotron{
+        /*This will change the background of jumbotron into a image*/
+        background-image: url("assets/la_salle.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 40%;
+        background-blend-mode: darken;
+    }
+    
+     /*For the tab above*/
+    .nav-pills{ 
+        background-color: white; 
+        font-size : large;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #67D952;
+        
+    }
+    .nav-pills .nav-link.active:hover{
+        background-color: #67D952;
+        
+    }
+
+    .nav-pills .nav-link{
+        color: var(--tabselectcolor);
+    }
+
+    .nav-pills .nav-link:hover{
+        background-color:  var(--tabhovercolor);
+    }
+
+    /*For the tab in the call for papers*/
+    .list-group {
+        font-size : medium;
+    }
+
+    .list-group .list-group-item-action.active{
+        background-color: #67D952;
+        color: white;
+    }
+
+    .list-group .list-group-item-action.active:hover{
+        background-color: #67D952;
+        color: white;
+    }
+
+    .list-group .list-group-item-action{
+        color: var(--tabselectcolor);
+        font-size: 18px; 
+    }
+    .list-group .list-group-item-action:hover{
+        background-color: var(--tabhovercolor);
+    }
+
+    /*Coloring of the footer*/
+    .footer-design{
+        background-color: #4EA63F;
+    }
+
+     /*Creating another size for the icons*/
+     .material-icons.md-14 { font-size: 14px; }
+
+     /*adjusting the font size of the data in the table*/
+     td{
+         font-size: 18px;    
+     }
+     
+     p{
+        font-size: 16px;
+     }
+
+    </style>
+
+    <!--For the navigation bar-->
+    <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
+                
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link active disabled m-2" href="#">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
+      </nav>
+
+    <!--Provide the neccessary title for the webpage-->
+    <div class="jumbotron jumbotron-fluid p-5 text-white">
+        <div class="container">
+          <h1 class="display-4">Journal of Computational Innovation and Engineering Applications</h1>
+          <p class="lead">A peer reviewed, open access journal of De La Salle University, Manila</p>
+        </div>
+      </div>
+    
+    <div class = "container-fluid">
+        
+        <h2 class="text-center mb-5 mt-5">Call for Papers (Topics of Interest)</h2>
+
+         <!--Selection Type for checking of the topics-->
+         <div class="row mb-5">
+
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-ci-list" data-toggle="list" href="#list-ci" role="tab" aria-controls="ci">Computational Intelligence</a>
+                <a class="list-group-item list-group-item-action" id="list-ett-list" data-toggle="list" href="#list-ett" role="tab" aria-controls="ett">Emerging Technology Trends</a>
+                <a class="list-group-item list-group-item-action" id="list-ene-list" data-toggle="list" href="#list-ene" role="tab" aria-controls="ene">Energy and Environment</a>
+                <a class="list-group-item list-group-item-action" id="list-eiact-list" data-toggle="list" href="#list-eiact" role="tab" aria-controls="eiact">Engineering, Information, and Communications Technology</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+
+                <!--List of the fields under the computational intelligence-->
+                <div class="tab-pane fade show active" id="list-ci" role="tabpanel" aria-labelledby="list-ci-list">
+
+                    <table class = "table  text-center table-sm table-striped">
+                        
+                        <thead>
+
+                            <tr>
+                                <th class = "text-center" scope = "col" colspan = "2">
+                                    <h4>Computational Intelligence</h4>
+                                </th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td> Agents and Multi-agent Systems </td>
+                                <td> Artificaial Intelligence </td>
+                            </tr>
+
+                            
+
+                            <tr>
+                                <td> Genetic and Evolutionary Algorithms </td>
+                                <td> Data Mining </td>
+                            </tr>
+
+                            <tr>
+                                <td> Deep Learning </td>
+                                <td> Expert Systems</td>
+                            </tr>
+            
+                            <tr>
+                                <td> Fuzzy Logic</td>
+                                <td> Knowledge Based System</td>
+                            </tr>
+
+                           
+                            <tr>
+                                <td> Macine Learning</td>
+                                <td> Machine/Computer Vision </td>
+                            </tr>
+
+                           
+                            <tr>
+                                <td> Natural Language Processing </td>
+                                <td> Neural Networks </td>
+                            </tr>
+
+                        
+                        </tbody>
+
+                    </table>
+
+                </div>
+                
+                <!--List of the fields under the emerging tecnollogy trends-->
+                <div class="tab-pane fade" id="list-ett" role="tabpanel" aria-labelledby="list-ett-list">
+
+                    <table class = "table  text-center table-sm table-striped">
+                        
+                        <thead>
+
+                            <tr>
+                                <th class = "text-center" scope = "col" colspan = "2">
+                                    <h4>Emerging Technology Trends</h4>
+                                </th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td> Big Data Analytics </td>
+                                <td> Biomedical, Health Care, and Assistive Technologies </td>
+                            </tr>
+
+                            
+
+                            <tr>
+                                <td> Cloud Computing </td>
+                                <td> Human-to-Machine Interfaces </td>
+                            </tr>
+
+                            <tr>
+                                <td> Internet of Things </td>
+                                <td> Inteligent Transport Systems </td>
+                            </tr>
+            
+                            <tr>
+                                <td> Smart Cities </td>
+                                <td> Smart Grids </td>
+                            </tr>
+                          
+                            <tr>
+                                <td> Smart Farm Technologies </td>
+                                <td> Virtual Reality </td>
+                            </tr>
+
+                            <tr>
+                                <td> Wireless Sensor Networks </td>
+                                <td> Augmented Reality </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+                
+                <!--List of the fields under the energy and environment-->
+                <div class="tab-pane fade" id="list-ene" role="tabpanel" aria-labelledby="list-ene-list">
+                    
+                    <table class = "table  text-center table-sm table-striped">
+                        
+                        <thead>
+
+                            <tr>
+                                <th class = "text-center" scope = "col" colspan = "2">
+                                    <h4>Energy and Environment</h4>
+                                </th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td> Enviromental Informatics </td>
+                                <td> Enviromental Systems Management </td>
+                            </tr>
+
+                            
+
+                            <tr>
+                                <td> Green Technology </td>
+                                <td> Industrial Ecology </td>
+                            </tr>
+
+                            <tr>
+                                <td> Life Cycle Assessment and Material Flow Analysis </td>
+                                <td> Nanotechnology and Nanomaterials </td>
+                            </tr>
+            
+                            <tr>
+                                <td> Renewable and Non-renewable Energy Sources </td>
+                                <td> Solid Waste Management </td>
+                            </tr>
+
+                           
+                            <tr>
+                                <td class = "text-center" colspan="2"> Sustainability Models </td>
+                                
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+                
+                <!--List of the fields under the engineering, information, and communications technology-->
+                <div class="tab-pane fade" id="list-eiact" role="tabpanel" aria-labelledby="list-eiact-list">
+
+                    <table class = "table  text-center table-sm table-striped">
+                        
+                        <thead>
+
+                            <tr>
+                                <th class = "text-center" scope = "col" colspan = "3">
+                                    <h4>Engineering, Information, and Communications Technology</h4>
+                                </th>
+
+                                <th> </th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td> Bioinformatics and Bioengineering </td>
+                                <td> Biomedical Engineering </td>
+                                <td> Biometrics </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td> Business Intelligence </td>
+                                <td> Computer-Aided Network Design </td>
+                                <td> Comnputing Architectures and Systems </td>
+                            </tr>
+
+                            <tr>
+                                <td> Cyber/Internet Security </td>
+                                <td> Data Analytics </td>
+                                <td> Decision Support Systems </td>
+                            </tr>
+
+                            <tr>
+                                <td> Digital/Analog Signal Processing </td>
+                                <td> E-Commerce Application Fields </td>
+                                <td> E-learning and Mobile Learning Tools </td>
+                            </tr>
+
+                            <tr>
+                                <td> Electronic Circuits and Systems Engineering </td>
+                                <td> Electronic Waste </td>
+                                <td> Gamification </td>
+                            </tr>
+
+                            <tr>
+                                <td> Image and Video Processing </td>
+                                <td> Information and Communications Technology </td>
+                                <td> Mechatronics Engineering </td>
+                            </tr>
+
+                            <tr>
+                                <td> Power and Energy </td>
+                                <td> Robotics, Control, and Automation </td>
+                                <td> Sensing and Sensor networks </td>
+                            </tr>
+
+                            <tr>
+                                <td> Virtual Learning Enviroments </td>
+                                <td class="text-center" colspan="2"> Web Analytics </td>
+                                
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+              </div>
+
+            </div>
+
+         </div>
+
+     
+        <!--Submit your Paper  and the author guidelines portion-->
+        <div class="row mt-3">
+            
+            <div class = "col">
+                
+                <h2 class="text-center">Submit your Paper</h2>
+                <p class="w-75 text-sm-center mx-auto d-block">
+                    Submit your paper to this email, <b>jciea.dlsu@gmail.com</b>. Make sure that you have read the author guidelines and follow it before sending your paper and other needed documents.
+                </p>
+            </div>
+    
+            <div class = "col">
+                <h2 class="text-center">Author Guidelines</h2>
+                <p class="w-75 text-sm-center mx-auto d-block">
+                    Follow the format of the paper for this journal. The format of the paper can be found in this <a href="https://drive.google.com/file/d/1zr6xykI1LaOP44BrAMqB9QbKAncbkm69/view?usp=sharing" target="_blank">link</a>. Also, make sure to fill up this  
+                    <a href="https://drive.google.com/file/d/1YOYmX_KH0rq2Qg9taEYNTX44YFlLDVIk/view?usp=sharing" target="_blank">copyright</a> and send it together with your paper. Please see the "Submit you Paper" portion to know whom the needed documents will be sent.
+                </p>
+            </div>
+     
+    
+        </div>
+
+    </div>
+    
+
+    <!--For the footer or the contact details-->
+    <div class="container-fluid mt-5 p-3 footer-design">
+        <div class="row w-50  mx-auto d-block text-center text-white">
+            <p>
+
+                <!--put additional contact details if there is pa-->
+                <br> Contact Details: <br>
+                <span class="material-icons md-14">mail</span> Email: jciea.dlsu@gmail.com
+
+                <br> <br> Subscription Details and Concerns: <br>
+                
+                Contact Ms. Joanne Castañares<br>
+                <span class="material-icons md-14">perm_phone_msg</span>  Telefax: (632) 523-4281 <br>
+                <span class="material-icons md-14">mail</span> Email: dlsupublishinghouse@ dlsu.edu.ph
+            </p>
+            
+        </div>
+    </div>
+    
+
+</html>
+
