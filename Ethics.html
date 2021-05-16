@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+        
+    </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	.jumbotron{
+        /*This will change the background of jumbotron into a image*/
+        background-image: url("assets/la_salle.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 40%;
+        background-blend-mode: darken;
+    }
+	* {
+	  box-sizing: border-box;
+	}
+
+	/* Center website */
+	.main {
+	  max-width: 1000px;
+	  margin: auto;
+	}
+
+	h1 {
+	  font-size: 50px;
+	  word-break: break-all;
+	}
+
+	.row {
+	  margin: 8px -16px;
+	}
+
+	/* Add padding BETWEEN each column */
+	.row,
+	.row > .column {
+	  padding: 8px;
+	}
+
+	/* Create four equal columns that floats next to each other */
+	.column {
+	  float: left;
+	  width: 33.33%;
+	}
+
+	/* Clear floats after rows */ 
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+
+	/* Content */
+	.content {
+	  background-color: white;
+	  padding: 10px;
+	}
+	body {
+	  font-family: Arial, Helvetica, sans-serif;
+	  text-align: center;
+	}
+
+	.flip-box {
+	  background-color: #325C2B;
+	  width: 300px;
+	  height: 200px;
+	  border: 1px solid white;
+	  perspective: 1000px;
+	}
+
+	.flip-box-inner {
+	  position: relative;
+	  width: 100%;
+	  height: 100%;
+	  text-align: center;
+	  transition: transform 0.8s;
+	  transform-style: preserve-3d;
+	}
+
+	.flip-box:hover .flip-box-inner {
+	  transform: rotateY(180deg);
+	}
+
+	.flip-box-front, .flip-box-back {
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  -webkit-backface-visibility: hidden;
+	  backface-visibility: hidden;
+	}
+
+	.flip-box-front {
+	  background-color: #bbb;
+	  color: black;
+	}
+
+	.flip-box-back {
+	  background-color:#325C2B;
+	  color: white;
+	  transform: rotateY(180deg);
+	}
+
+.nav-pills{ 
+        background-color: white; 
+        font-size : large;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #67D952;
+        
+    }
+    .nav-pills .nav-link.active:hover{
+        background-color: #67D952;
+        
+    }
+
+    .nav-pills .nav-link{
+        color:#325C2B;
+    }
+    .nav-pills .nav-link:hover{
+        background-color:  #e9ecef;
+    }
+
+    .footer-design{
+        background-color: #4EA63F;
+    }
+
+    /*Creating another size for the icons*/
+    .material-icons.md-14 { font-size: 14px; }
+</style>
+
+<body>
+<!--For the navigation bar-->
+    <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
+                
+        <a class="flex-sm-fill text-sm-center nav-link active m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
+      </nav>
+<!--Provide the neccessary title for the webpage-->
+    <div class="jumbotron jumbotron-fluid p-5 text-white">
+        <div class="container">
+          <h1 class="display-4">Journal of Computational Innovation and Engineering Applications</h1>
+          <p class="lead">A peer reviewed, open access journal of De La Salle University, Manila</p>
+        </div>
+      </div>
+	  
+<div class="project-tile">
+
+<div class="row">
+	<div class="column">
+		<div class="content">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						<strong>Article assessment</strong>
+    
+					</div>
+					<div class="flip-box-back">
+					<p>All manuscripts are subject to peer review and are expected to meet standards of academic excellence.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						<strong>Plagiarism</strong>
+					</div>
+					<div class="flip-box-back">
+					<p>Authors must not use the words, figures, or ideas of others without attribution. All sources must be cited at the point they are used, and reuse of wording must be limited and be attributed or quoted in the text.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						<strong>Duplicate submission and redundant publication</strong>
+					</div>
+					<div class="flip-box-back">
+					<p>Manuscripts submitted must not be submitted elsewhere while under consideration and must be withdrawn before being submitted elsewhere. Authors whose articles are found to have been simultaneously submitted elsewhere may incur sanctions.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div>.</div>
+<div class="row">
+	<div class="column">
+		<div class="content">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						<strong>Citation manipulation</strong>
+					</div>
+					<div class="flip-box-back">
+					<p>Authors whose submitted manuscripts are found to include citations whose primary purpose is to increase the number of citations to a given author’s work, or to articles published in a particular journal, may incur sanctions.</p>
+					<p></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						<strong>Fabrication and falsification</strong>
+					</div>
+					<div class="flip-box-back">
+					<p>The authors of submitted manuscripts or published articles that are found to have fabricated or falsified the results, including the manipulation of images, may incur sanctions, and published articles may be retracted.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="column">
+		<div class="content">
+			<div class="flip-box">
+				<div class="flip-box-inner">
+					<div class="flip-box-front">
+						<img src="assets/ebb.png" alt="ebb" style="width:100%">
+						<strong>Authorship and acknowledgements</strong>
+					</div>
+					<div class="flip-box-back">
+					<p>All listed authors must have made a significant scientific contribution to the research in the manuscript, approved its claims, and agreed to be an author. It is important to list everyone who made a significant scientific contribution. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+    <!--For the footer or the contact details-->
+    <div class="container-fluid mt-5 p-3 footer-design">
+        <div class="row w-50  mx-auto d-block text-center text-white">
+             <p>
+
+                <!--put additional contact details if there is pa-->
+                 <br> Contact Details: <br>
+                 <span class="material-icons md-14">mail</span> Email: jciea.dlsu@gmail.com
+    
+                 <br> <br> Subscription Details and Concerns: <br>
+                 
+                 Contact Ms. Joanne Castañares<br>
+                 <span class="material-icons md-14">perm_phone_msg</span>  Telefax: (632) 523-4281 <br>
+                 <span class="material-icons md-14">mail</span> Email: dlsupublishinghouse@ dlsu.edu.ph
+             </p>
+             
+        </div>
+     </div>
+</body>
+</html>
