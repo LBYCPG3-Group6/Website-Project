@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </head>
+<style>
+	.jumbotron{
+        /*This will change the background of jumbotron into a image*/
+        background-image: url("assets/la_salle.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 40%;
+        background-blend-mode: darken;
+    }
+	
+	.nav-pills{ 
+        background-color: white; 
+        font-size : large;
+    }
+
+    .nav-pills .nav-link.active {
+        background-color: #67D952;
+        
+    }
+    .nav-pills .nav-link.active:hover{
+        background-color: #67D952;
+        
+    }
+
+    .nav-pills .nav-link{
+        color:#325C2B;
+    }
+    .nav-pills .nav-link:hover{
+        background-color:  #e9ecef;
+    }
+
+    .footer-design{
+        background-color: #4EA63F;
+		 margin-left: auto;
+	  margin-right: auto;
+    }
+
+    /*Creating another size for the icons*/
+    .material-icons.md-14 { font-size: 14px; }
+	
+	body {
+	  background-color: white;
+	}
+
+	img {
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+
+	h1 {
+	text-align: center;
+	font-weight: bold;
+	}
+
+	p {
+	text-align: center;
+	font-weight: bold;
+	}
+
+	div {
+	text-align: center;
+	}
+
+	.i {
+	text-align: center;
+	font-style: italic;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+
+	.column {
+	  float: left;
+	  width: 50%;
+	}
+
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display: table;
+	}
+
+</style>
+<body>
+  <!--For the navigation bar-->
+    <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
+                
+        <a class="flex-sm-fill text-sm-center nav-link active m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
+      </nav>
+	  
+	<!--Provide the neccessary title for the webpage-->
+    <div class="jumbotron jumbotron-fluid p-5 text-white">
+        <div class="container">
+          <h1 class="display-4">Journal of Computational Innovation and Engineering Applications</h1>
+          <p class="lead">A peer reviewed, open access journal of De La Salle University, Manila</p>
+        </div>
+      </div>
+	  
+	<!--Editorial Board-->  
+	<h1> Editorial Board </h1>
+	<img src="assets/ED.png" alt="ED" style="width:10%;">
+	<div><strong> Editor-in-Chief </strong></div>
+	<div><strong>Prof. Elmer Dadios</strong></div>
+
+	<div class ="i">
+	<div>De La Salle University, Manila, Philippines</div>
+	</div>
+	<div>elmer.dadios@dlsu.edu.ph</div>
+	<p> </p>
+
+	<img src="assets/IV.png" alt="IV" style="width:10%;">
+
+	<div><strong> Managing Editor </strong></div>
+	<div><strong>Dr. Ira C. Valenzuela</strong></div>
+
+	<div class ="i">
+	<div>De La Salle University, Manila, Philippines</div>
+	</div>
+	<div>ira.valenzuela@dlsu.edu.ph</div>
+	<p> </p>
+
+	<h1> International Advisory Board </h1>
+
+	<div class="row">
+	  <div class="column">
+		<img src="assets/OK.png" alt="OK" style="width:15%">
+		<b>Prof. Oussama Khatib</b><div>
+		</div>
+		<i>Stanford University, USA </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/DW.png" alt="DW" style="width:15%">
+		<b>Prof. David Williams </b><div>
+		</div>
+		<i>Prof. Emiritus, Loughborough University, UK</i>
+		<p> </p>
+	  </div>
+
+	<div class="row">
+	  <div class="column">
+		<img src="assets/KH.png" alt="KH" style="width:15%">
+		<b>Prof. Kaoru Hirota  </b><div>
+		</div>
+		<i> Tokyo Institute of Technology, Japan </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/LW.png" alt="LW" style="width:15%">
+		<b>Prof. Lawrence Wong</b><div>
+		</div>
+		<i>National University of Singapore, Singapore</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/AA.png" alt="AA" style="width:15%">
+		<b>Prof. Abdoullah A. Afjeh</b><div>
+		</div>
+		<i> Oregon Institute of Technology</i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/KC.png" alt="KC" style="width:15%">
+		<b>Prof. Kukjin Chun </b><div>
+		</div>
+		<i>Seoul National University, South Korea</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="MA.png" alt="MA" style="width:15%">
+		<b>Prof. Marcelo Ang </b><div>
+		</div>
+		<i>National University of Singapore, Singapore </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/JC.png" alt="JC" style="width:15%">
+		<b>Prof. Joel Cuello </b><div>
+		</div>
+		<i>University of Arizona, USA</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/KA.png" alt="KA" style="width:15%">
+		<b>Prof. Kathleen Aviso </b><div>
+		</div>
+		<i> ChE Department De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/AC.png" alt="AC" style="width:15%">
+		<b>Prof. Alvin Culaba </b><div>
+		</div>
+		<i>ME Department De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/AB.png" alt="AB" style="width:15%">
+		<b>Prof. Argel Bandala </b><div>
+		</div>
+		<i>ECE Department De La Salle University, Philippines  </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/EDZ.png" alt="EDZ" style="width:15%">
+		<b>Prof. Eryk Dutkiewicz </b><div>
+		</div>
+		<i>University of Technology Sydney, Australia</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/JJC.png" alt="JJC" style="width:15%">
+		<b>Prof. John-John Cabibihan</b><div>
+		</div>
+		<i>Qatar University, Qatar  </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/AF.png" alt="AF" style="width:15%">
+		<b>Prof. Alexis Fillone </b><div>
+		</div>
+		<i>CE Department De La Salle University, Philippines </i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/ASFC.png" alt="ASFC" style="width:15%">
+		<b>Prof. Anthony SF Chiu </b><div>
+		</div>
+		<i>IE Department De La Salle University, Philippines </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/LGL.png" alt="LGL" style="width:15%">
+		<b>Prof. Laurence Gan Lim </b><div>
+		</div>
+		<i>ME Department De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/RJ.png" alt="RJ" style="width:15%">
+		<b>Prof. Rodrigo Jamisola, Jr. </b><div>
+		</div>
+		<i>Botswana International University of Science and Technology  </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/IM.png" alt="IM" style="width:15%">
+		<b>Prof. Ioan Marinescu</b><div>
+		</div>
+		<i>University of Toledo, USA</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/JM.png" alt="JM" style="width:15%">
+		<b>Prof. Janina Mazierska</b><div>
+		</div>
+		<i>James Cook University, Australia</i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/RN.png" alt="RN" style="width:15%">
+		<b>Prof. Raouf Naguib </b><div>
+		</div>
+		<i>BIOCORE, International Liverpool Hope University, U.K. </i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/YJP.png" alt="YJP" style="width:15%">
+		<b>Prof. Yong-Jin Park</b><div>
+		</div>
+		<i>Universiti Malaysia Sabah, Malaysia </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/RS.png" alt="RS" style="width:15%">
+		<b>Prof. Raymund Sison </b><div>
+		</div>
+		<i>CCS De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/NTQL.png" alt="NTQL" style="width:15%">
+		<b>Dr. Nguyen Thi Quynh Lam</b><div>
+		</div>
+		<i> European International School, Vietnam</i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/ES.png" alt="ES" style="width:15%">
+		<b>Prof. Edwin Sybingco </b><div>
+		</div>
+		<i>ECE Department De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  
+	  <div class="row">
+	  <div class="column">
+		<img src="assets/RGT.png" alt="RGT" style="width:15%">
+		<b>Prof. Raymond Girard Tan </b><div>
+		</div>
+		<i>ChE Department De La Salle University, Philippines </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src="assets/RV.png" alt="RV" style="width:15%">
+		<b>Prof. Ryan Vicerra </b><div>
+		</div>
+		<i>MEM Department De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  
+	   <div class="row">
+	  <div class="column">
+		<img src=".png" alt="" style="width:15%">
+		<b style="color:white;">Prof. Raymond Girard Tan </b><div>
+		</div>
+		<i style="color:white;">ChE Department De La Salle University, Philippines </i>
+		<p> </p>
+	  </div>
+	  <div class="column">
+		<img src=".png" alt="" style="width:15%">
+		<b style="color:white;">Prof. Ryan Vicerra </b><div>
+		</div>
+		<i style="color:white;">MEM Department De La Salle University, Philippines</i>
+		<p> </p>
+	  </div>
+	  </div>
+	  
+<!--For the footer or the contact details-->
+
+    <div class="container-fluid mt-5 p-3 footer-design">
+        <div class="row w-50  mx-auto d-block text-center text-white">
+             <p>
+
+                <!--put additional contact details if there is pa-->
+                 <br> Contact Details: <br>
+                 <span class="material-icons md-14">mail</span> Email: jciea.dlsu@gmail.com
+    
+                 <br> <br> Subscription Details and Concerns: <br>
+                 
+                 Contact Ms. Joanne Castañares<br>
+                 <span class="material-icons md-14">perm_phone_msg</span>  Telefax: (632) 523-4281 <br>
+                 <span class="material-icons md-14">mail</span> Email: dlsupublishinghouse@ dlsu.edu.ph
+             </p>
+             
+        </div>
+     </div>
+
+	   
+</body>
+</html>
