@@ -21,11 +21,12 @@
     }
     .jumbotron{
         /*This will change the background of jumbotron into a image*/
-        background-image: url("assets/la_salle.jpg");
+        background-image: url("assets/la_salle_v2.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 40%;
         background-blend-mode: darken;
+        text-align: center;
     }
     
      /*For the tab above*/
@@ -74,6 +75,10 @@
         background-color: var(--tabhovercolor);
     }
 
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+        background-color: #67D952;
+    }
+
     /*Coloring of the footer*/
     .footer-design{
         background-color: #4EA63F;
@@ -93,14 +98,16 @@
 
     </style>
 
+    <title>JCIEA - Submit</title>
+
     <!--For the navigation bar-->
     <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
                 
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link active disabled m-2" href="#">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="homepage.html" target="_self">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="EditorialBoard.html" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link active disabled m-2" >Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="Ethics.html" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="Publication Issues.html" target="_self">Publication Issues</a> <!--Put journals issues and annual publication rates page link here-->
       </nav>
 
     <!--Provide the neccessary title for the webpage-->
@@ -113,7 +120,7 @@
     
     <div class = "container-fluid">
         
-        <h2 class="text-center mb-5 mt-5">Call for Papers (Topics of Interest)</h2>
+        <h1 class="text-center mb-5 mt-5">Call for Papers (Topics of Interest)</h1>
 
          <!--Selection Type for checking of the topics-->
          <div class="row mb-5">
@@ -170,7 +177,7 @@
 
                            
                             <tr>
-                                <td> Macine Learning</td>
+                                <td> Machine Learning</td>
                                 <td> Machine/Computer Vision </td>
                             </tr>
 
@@ -218,7 +225,7 @@
 
                             <tr>
                                 <td> Internet of Things </td>
-                                <td> Inteligent Transport Systems </td>
+                                <td> Intelligent Transport Systems </td>
                             </tr>
             
                             <tr>
@@ -357,7 +364,7 @@
                             </tr>
 
                             <tr>
-                                <td> Virtual Learning Enviroments </td>
+                                <td> Virtual Learning Environments </td>
                                 <td class="text-center" colspan="2"> Web Analytics </td>
                                 
                             </tr>
@@ -380,14 +387,14 @@
             
             <div class = "col">
                 
-                <h2 class="text-center">Submit your Paper</h2>
+                <h1 class="text-center">Submit your Paper</h1>
                 <p class="w-75 text-sm-center mx-auto d-block">
                     Submit your paper to this email, <b>jciea.dlsu@gmail.com</b>. Make sure that you have read the author guidelines and follow it before sending your paper and other needed documents.
                 </p>
             </div>
     
             <div class = "col">
-                <h2 class="text-center">Author Guidelines</h2>
+                <h1 class="text-center">Author Guidelines</h1>
                 <p class="w-75 text-sm-center mx-auto d-block">
                     Follow the format of the paper for this journal. The format of the paper can be found in this <a href="https://drive.google.com/file/d/1zr6xykI1LaOP44BrAMqB9QbKAncbkm69/view?usp=sharing" target="_blank">link</a>. Also, make sure to fill up this  
                     <a href="https://drive.google.com/file/d/1YOYmX_KH0rq2Qg9taEYNTX44YFlLDVIk/view?usp=sharing" target="_blank">copyright</a> and send it together with your paper. Please see the "Submit you Paper" portion to know whom the needed documents will be sent.

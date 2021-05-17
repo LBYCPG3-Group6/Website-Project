@@ -51,21 +51,33 @@
 		  -o-background-size: cover;
 		  background-size: cover;
 		}
+	.slide{
+		color: #e9ecef;
+    
+	}
+	dd{
+		font-size: large;
+	}
+	dt{
+		font-size: larger;
+	}
     </style>
-
+	<title>JCIEA - Home</title>
+	
     <!--For the navigation bar-->
     <nav class="nav nav-pills sticky-top mb-3 p-3 font-weight-bold ">
                 
-        <a class="flex-sm-fill text-sm-center nav-link active m-2" href="#" target="_self">Home</a> <!--Put home page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
-        <a class="flex-sm-fill text-sm-center nav-link m-2" href="#" target="_self">Publication Dates</a> <!--Put journals issues and annual publication rates page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link active disabled m-2">Home</a> <!--Put home page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="EditorialBoard.html" target="_self">Editorial Board</a> <!--Put the editorial page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="submit.html" target="_self">Submit</a> <!--Put the submission page(Submit your manuscript, author guidelines, and call for paper) link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="Ethics.html" target="_self">Publication Ethics</a> <!--Put publication ethics page link here-->
+        <a class="flex-sm-fill text-sm-center nav-link m-2" href="Publication Issues.html" target="_self">Publication Issues</a> <!--Put journals issues and annual publication rates page link here-->
       </nav>
 
     <!--Provide the neccessary title for the webpage-->
-	<header>
-		  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<div class="mb-1">
+
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
 			  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 			  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -73,41 +85,50 @@
 			</ol>
 			<div class="carousel-inner" role="listbox">
 			  <!-- Slide One - Set the background image for this slide in the line below -->
-			  <div class="carousel-item active" style="background-image: url('assets/la_salle.jpg')">
-				<div class="carousel-caption d-none d-md-block">
-				  <h2 class="display-4 font-weight-bold "> Journal of Computational Innovations and Engineering Applications (JCIEA)</h2>
-				  <p class="lead">The Journal of Computational Innovations and Engineering Applications (JCIEA) is a peer reviewed, open access journal of De La Salle University, Manila. The JCIEA aims to promote the development of new and creative ideas on the use of technology in solving different problems in different fields of our daily lives. The JCIEA solicits high quality papers containing original contributions in all areas of theory and applications of Engineering and Computing including but not limited to: Computational Applications, Computational Intelligence, Electronics and Information and Communications Technology (ICT), Manufacturing Engineering, Energy and Environment, Robotics, Control and Automation, and all their related fields. The JCIEA editorial board is comprised of experts from all around the world who are proactively pushing for the development of research in these fields
-Here is the link for the project repository</p>
-				<br><br><br><br><br>
-
+			  <div class="carousel-item active" style="background-image: url('assets/la_salle_v2.jpg')">
+				<div class="slide w-75 d-flex h-100 align-items-center justify-content-center mx-auto">
+				  <div class="container">
+					<h2 class="display-4 text-center"> Journal of Computational Innovations and Engineering Applications (JCIEA)</h2>
+					<p class="lead">The Journal of Computational Innovations and Engineering Applications (JCIEA) is a peer reviewed, open access journal of De La Salle University, Manila. The JCIEA aims to promote the development of new and creative ideas on the use of technology in solving different problems in different fields of our daily lives. The JCIEA solicits high quality papers containing original contributions in all areas of theory and applications of Engineering and Computing including but not limited to: Computational Applications, Computational Intelligence, Electronics and Information and Communications Technology (ICT), Manufacturing Engineering, Energy and Environment, Robotics, Control and Automation, and all their related fields. The JCIEA editorial board is comprised of experts from all around the world who are proactively pushing for the development of research in these fields.
+				  </div>
+				
 				</div>
 			  </div>
 			  <!-- Slide Two - Set the background image for this slide in the line below -->
-			  <div class="carousel-item background-bs" style="background-image: url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80')">
-				<div class="carousel-caption d-none d-md-block">
-				  <h2 class="display-4 font-weight-bold">Submit a Manuscript!</h2>
-				  <p class="lead">The JCIEA is calling for papers click on the button below to know more details</p>
-				  <button href="#" class="btn btn-success btn-lg">Manuscript Sumbission Details Here</button>
-				  <br><br><br><br><br><br><br><br><br><br>
+			  <div class="carousel-item background-bs" style="background-image: url('assets/typing.png')">
+				<div class="slide w-75 d-flex h-100 align-items-center justify-content-center mx-auto">
+				  
+					<div class="container text-center">
+						<h2 class="display-4 font-weight-bold">Submit a Manuscript!</h2>
+						<p class="lead">The JCIEA is calling for papers click on the button below to know more details</p>
+						<a href="submit.html" target="_self"><button class="btn btn-success btn-lg">Manuscript Sumbission Details Here</button></a>
+					</div>
+				
 				</div>
 			  </div>
+
 			  <!-- Slide Three - Set the background image for this slide in the line below -->
-			  <div class="carousel-item " style="background-image: url('https://images.unsplash.com/photo-1601370690183-1c7796ecec61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80')">
-				<div class="carousel-caption d-none d-md-block">
-				  <h2 class="display-4 font-weight-bold">Important Dates</h2>
-				  <br><br>
-				  <dl>
-					<dt>JCIEA Vol.6 No.1, July 2021</dt>
-					<dd>April 15, 2021 – Deadline for Submission of Full paper</dd>
-					<dd>May 15, 2021 – Notification of Acceptance</dd>
-					<dd>June 1, 2021 – Deadline for Submission of Final Paper</dd>
-					<br><br>
-					<dt>JCIEA Vol.6 No.2, Jan. 2022</dt>
-					<dd>August 15, 2021 – Deadline for Submission of Full paper</dd>
-					<dd>September 15, 2021 – Notification of Acceptance</dd>
-					<dd>October 30, 2021 – Deadline for Submission of Final Paper</dd>
-					<br><br><br><br>
-				</dl>
+			  <div class="carousel-item " style="background-image: url('assets/grass.jpg')">
+				<div class="slide w-75 d-flex h-100 align-items-center justify-content-center mx-auto">
+				  
+					<div class="container text-center" >
+
+						<h2 class="display-4 font-weight-bold">Important Dates</h2>
+						<br>
+						<dl >
+						  <dt>JCIEA Vol.6 No.1, July 2021</dt>
+						  <dd>April 15, 2021 – Deadline for Submission of Full paper</dd>
+						  <dd>May 15, 2021 – Notification of Acceptance</dd>
+						  <dd>June 1, 2021 – Deadline for Submission of Final Paper</dd>
+						  <br><br>
+						  <dt>JCIEA Vol.6 No.2, Jan. 2022</dt>
+						  <dd>August 15, 2021 – Deadline for Submission of Full paper</dd>
+						  <dd>September 15, 2021 – Notification of Acceptance</dd>
+						  <dd>October 30, 2021 – Deadline for Submission of Final Paper</dd>
+					  	</dl>
+
+					</div>
+				 
 				</div>
 			  </div>
 			</div>
@@ -119,8 +140,11 @@ Here is the link for the project repository</p>
 				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 				  <span class="sr-only">Next</span>
 				</a>
-		  </div>
-		</header>
+	  </div>
+
+	</div>
+	  
+	
     
 
 
